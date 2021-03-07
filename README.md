@@ -23,7 +23,7 @@ Projects
 | [**EthernetProxy**](https://github.com/nesto-software/EthernetProxy)  | Ethernet | Hardware |
 | [**SerialProxy**](https://github.com/nesto-software/SerialProxy)    | RS-232 | Software or Hardware |
 
-We distinguish between a solution which does the actual proxying purely in software and one which does it in specialized hardware. The latter is generally more performant and robust. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly [the team from Great Scott Gadgets](https://greatscottgadgets.com/). 
+We distinguish between a solution which does the actual proxying purely in software and one which does it in specialized hardware. The latter is generally more performant and robust. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly [the team at Great Scott Gadgets](https://greatscottgadgets.com/). 
 
 Approach
 ---------
