@@ -28,7 +28,7 @@ We distinguish between a solution which does the actual proxying purely in softw
 Approach
 ---------
 
-With this project, we want to contribute by:
+With this project, we want to contribute by...
 - ...providing an IPC layer which abstracts away the details of the interface being targeted.
 - ...joining forces with the global community of open-source enthusiasts, working on making common peripheral interfaces more accessible for everyone.
 
