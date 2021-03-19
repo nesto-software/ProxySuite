@@ -17,11 +17,12 @@ Device Support
 Projects
 ---------
 
-| Project            | Interface Type       | Data Forwarding Component Type
-|:-------------------|:-----------------|:----------------|
-| [**USBProxy**](https://github.com/nesto-software/USBProxy)       | USB | Software |
-| [**EthernetProxy**](https://github.com/nesto-software/EthernetProxy)  | Ethernet | Hardware |
-| [**SerialProxy**](https://github.com/nesto-software/SerialProxy)    | RS-232 | Software or Hardware |
+| Project            | Interface Type       | Data Forwarding Component Type | Status |
+|:-------------------|:-----------------|:----------------|:----------------|
+| [**USBProxy**](https://github.com/nesto-software/USBProxy)       | USB | Software | RTM :heavy_check_mark: |
+| [**EthernetProxy**](https://github.com/nesto-software/EthernetProxy)  | Ethernet | Hardware | PoC :soon: |
+| [**SerialProxy**](https://github.com/nesto-software/SerialProxy)    | RS-232 | Software | RTM :heavy_check_mark: |
+| *TBA* | IEEE 1284 (Centronics / LPT) | Software | TBD :gear: |
 
 We distinguish between a solution which does the actual proxying purely in software and one which does it in specialized hardware. The latter is generally more performant and robust. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly [the team at Great Scott Gadgets](https://greatscottgadgets.com/). 
 
