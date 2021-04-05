@@ -27,7 +27,7 @@ Projects
   <tr><td><i>TBA</i></td><td>IEEE 1284 (Centronics / LPT)</td><td>Software</td><td>TBD :gear:</td></tr>
 </table>
 
-We distinguish between a solution which does the actual proxying purely in software and one which does it in specialized hardware. The latter is generally more performant and robust. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly [the team at Great Scott Gadgets](https://greatscottgadgets.com/) and [Retro-Printer](https://www.retroprinter.com/). 
+We distinguish between a solution which does the actual proxying purely in software and one which does it in specialized hardware. The latter is generally more performant and robust. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly [the team at Great Scott Gadgets](https://greatscottgadgets.com/), [Keelog](https://www.keelog.com/software/) and [Retro-Printer](https://www.retroprinter.com/). 
 
 Approach
 ---------
