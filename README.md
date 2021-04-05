@@ -18,13 +18,13 @@ Projects
 ---------
 
 <table>
-  <tr><td>Project</td><td>Interface Type</td><td>Data Forwarding Component Type</td><td>Status</td></tr>
+  <tr><th>Project</th><th>Interface Type</th><th>Data Forwarding Component Type</th><th>Status</th></tr>
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/USBProxy">USBProxy</a></td><td rowspan="2">USB</td><td>Software</td><td>RTM :heavy_check_mark:</td></tr>
-  <tr><td>Hardware</td><td>TBD :gear:</td></tr>
-  <tr><td><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a></td><td>Ethernet</td><td>Hardware</td><td>PoC :soon:</td></tr>
+  <tr><td>Hardware <sub><sup><a href="https://luna.readthedocs.io/en/latest/features.html#reference-boards">[LUNA]</a></sub></sup></td><td>TBD :gear:</td></tr>
+  <tr><td><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a></td><td>Ethernet</td><td>Hardware <sub><sup><a href="https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg105e/">[TL-SG105E]</a><a href="https://greatscottgadgets.com/throwingstar/">[Throwing Star LAN Tap]</a></sub></sup></td><td>PoC :soon:</td></tr>
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/SerialProxy">SerialProxy</a></td><td rowspan="2">RS-232</td><td>Software</td><td>RTM :heavy_check_mark:</td></tr>
-  <tr><td>Hardware</td><td>PoC :soon:</td></tr>
-  <tr><td><i>TBA</i></td><td>IEEE 1284 (Centronics / LPT)</td><td>Software</td><td>TBD :gear:</td></tr>
+  <tr><td>Hardware <sub><sup><a href="https://www.keelog.com/serial-logger/">[AirDrive Serial Logger]</a></sub></sup></td><td>PoC :soon:</td></tr>
+  <tr><td><i>TBA</i></td><td>IEEE 1284 (Centronics / LPT)</td><td>Software <sub><sup><a href="https://www.retroprinter.com/">[using retro-printer module]</a></sub></sup></td><td>TBD :gear:</td></tr>
 </table>
 
 We distinguish between a solution which does the actual proxying purely in software and one which does it in specialized hardware. The latter is generally more performant and robust. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly [the team at Great Scott Gadgets](https://greatscottgadgets.com/), [Keelog](https://www.keelog.com/software/) and [Retro-Printer](https://www.retroprinter.com/). 
