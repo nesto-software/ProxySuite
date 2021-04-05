@@ -26,7 +26,7 @@ Projects
   <tr><td>Hardware <sub><sup><a href="https://www.keelog.com/serial-logger/">[AirDrive Serial Logger]</a></sub></sup></td><td>PoC :soon:</td></tr>
   <tr><td><i>TBA</i></td><td>IEEE 1284 (Centronics / LPT)</td><td>Software <sub><sup><a href="https://www.retroprinter.com/">[using retro-printer module]</a></sub></sup></td><td>TBD :gear:</td></tr>
 </table><sub><sup>* no special hardware required</sub></sup>
-<br />
+<br /><br />
 
 We distinguish between a solution which does the actual proxying purely in software and one which does it in specialized hardware. The latter is generally more performant and robust. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly [the team at Great Scott Gadgets](https://greatscottgadgets.com/), [Keelog](https://www.keelog.com/software/) and [Retro-Printer](https://www.retroprinter.com/).
 
