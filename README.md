@@ -2,7 +2,7 @@ Proxy Suite for Raspberry Pi 4B (armhf)
 ========
 
 <p align="center">
-  <img src=".github/imgs/project_logo.png">
+  <img src=".github/imgs/project_logo_v2.png">
 </p>
 
 The Proxy Suite is a collection of open-source software which allows to intercept traffic between a target system and its peripherals using a Raspberry Pi 4B device. It is an effort to standardize data exfiltration of (wired) connections between closed-source systems using commodity hardware. The software which is referenced under this umbrella project is a slightly modified version of well-known open-source projects by individual developers and security researchers from all over the world. We at Nesto try to enhance the existing approaches and release our efforts under the same software license as the original project.
