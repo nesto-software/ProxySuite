@@ -5,7 +5,7 @@ Proxy Suite for Raspberry Pi 4B (armhf)
   <img src=".github/imgs/project_logo_v2.png">
 </p>
 
-The Proxy Suite is a collection of open-source software which allows to intercept traffic between a target system and its peripherals using a Raspberry Pi 4B device. It is an effort to standardize data exfiltration of (wired) connections between closed-source systems using commodity hardware. The software which is referenced under this umbrella project is a slightly modified version of well-known open-source projects by individual developers and security researchers from all over the world. We at Nesto try to enhance the existing approaches and release our efforts under the same software license as the original project.
+The Proxy Suite is a collection of open-source software which allows intercepting traffic between a target system and its peripherals using a Raspberry Pi 4B device. It is an effort to standardize data exfiltration of (wired) connections between closed-source systems using commodity hardware. The software which is referenced under this umbrella project is a slightly modified version of well-known open-source projects by individual developers and security researchers from all over the world. We at Nesto try to enhance the existing approaches and release our efforts under the same software license as the original project.
 
 Device Support
 ---------
@@ -47,6 +47,17 @@ With this project, we want to contribute by...
 - ...providing an IPC layer which abstracts away the details of the interface being targeted.
 - ...joining forces with the global community of open-source enthusiasts, working on making common peripheral interfaces more accessible for everyone.
 
+Status
+--------
+
+We are able to extract data from every non-encrypted wired communication channel between a POS system and its printers that is known to us!
+
+We noticed that wireless connections are rarely used for thermal printers. We can probably work around Wi-Fi (IEEE 802.11) by spawning a custom access point and using EthernetProxy between the AP and the POS. Support for Bluetooth (IEEE 802.15) might be added to this project in the future as we see more and more people using Bluetooth thermal printers. In both wireless cases, we must make sure that traffic flows through the proxy device. Observing traffic passively, like in the hardware approach of the EthernetProxy component, is too risky since we cannot make sure that we see all packets between the target devices.
+
+Applicability
+--------
+
+Most thermal printers on the market use the [JetDirect](https://en.wikipedia.org/wiki/JetDirect) or the AppSocket protocol to receive print jobs over the network. It is a simple TCP connection over port 9100, which transports data in plain text. No encryption is used for other transports over interfaces such as USB, Serial, or LPT either. Thus, the ProxySuite components gain access to all of the invoice content transferred between the POS system and its printer. Once the data is intercepted, it can be analyzed as is. The ZMQ layer provided by all ProxySuite components makes the analysis a lot easier by letting you choose the programming language you want to use. There is a clear separation between "low-level" components that extract the data for you and the final analysis, which you might code in any language that has a [ZMQ binding](http://wiki.zeromq.org/bindings:_start) available.
 
 GPG
 ---------
