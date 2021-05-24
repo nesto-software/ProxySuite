@@ -29,7 +29,7 @@ Projects
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/SerialProxy">SerialProxy</a><br /><sub><sup>(based on: <a href="http://www.earth.li/projectpurple/progs/sersniff.html">sersniff</a>)</sub></sup></td><td rowspan="2">RS-232</td><td>Software<sup>*</sup></td><td>RTM :heavy_check_mark:</td></tr>
   <tr><td>Hardware <sub><sup><a href="https://www.keelog.com/serial-logger/">[AirDrive Serial Logger]</a></sub></sup></td><td>PoC<sup>**</sup> :warning:</td></tr>
 
-  <tr><td rowspan="2"><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a></td><td rowspan="2">IEEE 1284 (Centronics / LPT)</td><td>Software <sub><sup><a href="https://www.retroprinter.com/">[using retro-printer module]</a></sub></sup></td><td>TBD :gear:</td></tr><tr><td>Hardware<sup>***</sup></td><td>--- :question:</td></tr>
+  <tr><td rowspan="2"><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a><br /><sub><sup>(based on: retro-printer capture code)</sub></sup></td><td rowspan="2">IEEE 1284 (Centronics / LPT)</td><td>Software <sub><sup><a href="https://www.retroprinter.com/">[using retro-printer module]</a></sub></sup></td><td>TBD :gear:</td></tr><tr><td>Hardware<sup>***</sup></td><td>--- :question:</td></tr>
 
 </table>
 <sub><sup>* no special hardware required</sub></sup><br />
