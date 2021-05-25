@@ -65,13 +65,13 @@ Releases / Downloads
 <table>
 
   <tr><th>Project</th><th>Release</th><th>Status</th></tr>
-  <tr><td>USBProxy</td><td><a href="https://github.com/nesto-software/USBProxy/releases/tag/nightly-latest">nightly</a><br /><a href="https://github.com/nesto-software/USBProxy/releases/tag/v0.1.0">v0.1.0</a></td><td><a href="https://github.com/nesto-software/USBProxy/actions/workflows/build-app-nightly.yaml"><img src="https://github.com/nesto-software/USBProxy/workflows/.github/workflows/build-app-nightly.yaml/badge.svg?branch=dev" /></a></td></tr>
+  <tr><td><a href="https://github.com/nesto-software/USBProxy">USBProxy</a></td><td><a href="https://github.com/nesto-software/USBProxy/releases/tag/nightly-latest">nightly</a><br /><a href="https://github.com/nesto-software/USBProxy/releases/tag/v0.1.0">v0.1.0</a></td><td><a href="https://github.com/nesto-software/USBProxy/actions/workflows/build-app-nightly.yaml"><img src="https://github.com/nesto-software/USBProxy/workflows/.github/workflows/build-app-nightly.yaml/badge.svg?branch=dev" /></a></td></tr>
   
-  <tr><td>EthernetProxy</td><td><a href="https://github.com/nesto-software/EthernetProxy/releases/tag/latest">latest</a></td><td><a href="https://github.com/nesto-software/EthernetProxy/actions/workflows/build-tcpflow-gg.yml"><img src="https://github.com/nesto-software/EthernetProxy/actions/workflows/build-tcpflow-gg.yml/badge.svg" /></a></td></tr>
+  <tr><td><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a></td><td><a href="https://github.com/nesto-software/EthernetProxy/releases/tag/latest">latest</a></td><td><a href="https://github.com/nesto-software/EthernetProxy/actions/workflows/build-tcpflow-gg.yml"><img src="https://github.com/nesto-software/EthernetProxy/actions/workflows/build-tcpflow-gg.yml/badge.svg" /></a></td></tr>
   
-  <tr><td>SerialProxy</td><td><a href="https://github.com/nesto-software/SerialProxy/releases/tag/latest">latest</a></td><td><a href="https://github.com/nesto-software/SerialProxy/actions/workflows/build.yml"><img src="https://github.com/nesto-software/SerialProxy/actions/workflows/build.yml/badge.svg" /></a></td></tr>
+  <tr><td><a href="https://github.com/nesto-software/SerialProxy">SerialProxy</a></td><td><a href="https://github.com/nesto-software/SerialProxy/releases/tag/latest">latest</a></td><td><a href="https://github.com/nesto-software/SerialProxy/actions/workflows/build.yml"><img src="https://github.com/nesto-software/SerialProxy/actions/workflows/build.yml/badge.svg" /></a></td></tr>
   
-  <tr><td>LPTProxy</td><td><a href="https://github.com/nesto-software/LPTProxy/releases/tag/latest">latest</a></td><td><a href="https://github.com/nesto-software/LPTProxy/actions/workflows/build-lptproxy.yml"><img src="https://github.com/nesto-software/LPTProxy/actions/workflows/build-lptproxy.yml/badge.svg" /></a></td></tr>
+  <tr><td><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a></td><td><a href="https://github.com/nesto-software/LPTProxy/releases/tag/latest">latest</a></td><td><a href="https://github.com/nesto-software/LPTProxy/actions/workflows/build-lptproxy.yml"><img src="https://github.com/nesto-software/LPTProxy/actions/workflows/build-lptproxy.yml/badge.svg" /></a></td></tr>
   
 </table>
 
