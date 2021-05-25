@@ -59,6 +59,19 @@ Applicability
 
 Most thermal printers on the market use the [JetDirect](https://en.wikipedia.org/wiki/JetDirect) or the AppSocket protocol to receive print jobs over the network. It is a simple TCP connection over port 9100, which transports data in plain text. No encryption is used for other transports over interfaces such as USB, Serial, or LPT either. Thus, the ProxySuite components gain access to all of the invoice content transferred between the POS system and its printer. Once the data is intercepted, it can be analyzed as is. The ZMQ layer provided by all ProxySuite components makes the analysis a lot easier by letting you choose the programming language you want to use. There is a clear separation between "low-level" components that extract the data for you and the final analysis, which you might code in any language that has a [ZMQ binding](http://wiki.zeromq.org/bindings:_start) available.
 
+Releases / Downloads
+---------
+
+<table>
+
+  <tr><th>Project</th><th>Release</th></tr>
+  <tr><td>USBProxy</td><td><a href="https://github.com/nesto-software/USBProxy/releases/tag/nightly-latest">nightly</a><br /><a href="https://github.com/nesto-software/USBProxy/releases/tag/v0.1.0">v0.1.0</a></td></tr>
+  <tr><td>EthernetProxy</td><td><a href="https://github.com/nesto-software/EthernetProxy/releases/tag/latest">latest</a></td></tr>
+  <tr><td>SerialProxy</td><td><a href="https://github.com/nesto-software/SerialProxy/releases/tag/latest">latest</a></td></tr>
+  <tr><td>LPTProxy</td><td><a href="https://github.com/nesto-software/LPTProxy/releases/tag/latest">latest</a></td></tr>
+  
+</table>
+
 GPG
 ---------
 
