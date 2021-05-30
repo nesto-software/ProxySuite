@@ -61,6 +61,22 @@ Applicability
 
 Most thermal printers on the market use the [JetDirect](https://en.wikipedia.org/wiki/JetDirect) or the AppSocket protocol to receive print jobs over the network. It is a simple TCP connection over port 9100, which transports data in plain text. No encryption is used for other transports over interfaces such as USB, Serial, or LPT either. Thus, the ProxySuite components gain access to all of the invoice content transferred between the POS system and its printer. Once the data is intercepted, it can be analyzed as is. The ZMQ layer provided by all ProxySuite components makes the analysis a lot easier by letting you choose the programming language you want to use. There is a clear separation between "low-level" components that extract the data for you and the final analysis, which you might code in any language that has a [ZMQ binding](http://wiki.zeromq.org/bindings:_start) available.
 
+Releases / Downloads
+---------
+
+<table>
+
+  <tr><th>Project</th><th>Release</th><th>Download</th><th>Status</th></tr>
+  <tr><td><a href="https://github.com/nesto-software/USBProxy">USBProxy</a></td><td><a href="https://github.com/nesto-software/USBProxy/releases/tag/nightly-latest">nightly</a><br /><a href="https://github.com/nesto-software/USBProxy/releases/tag/v0.1.0">v0.1.0</a></td><td><code>bash -c "$(curl -fsSL https://raw.githubusercontent.com/nesto-software/USBProxy/master/scripts/install-from-release.sh)"</code></td><td><a href="https://github.com/nesto-software/USBProxy/actions/workflows/build-app-nightly.yaml"><img src="https://github.com/nesto-software/USBProxy/workflows/.github/workflows/build-app-nightly.yaml/badge.svg?branch=dev" /></a><br /><a href="https://github.com/nesto-software/USBProxy/actions/workflows/build-app-release.yaml"><img src="https://github.com/nesto-software/USBProxy/workflows/.github/workflows/build-app-release.yaml/badge.svg" /></a></td></tr>
+  
+  <tr><td><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a></td><td><a href="https://github.com/nesto-software/EthernetProxy/releases/tag/latest">latest</a></td><td><code>bash -c "$(curl -fsSL https://raw.githubusercontent.com/nesto-software/EthernetProxy/master/scripts/install-from-release.sh)"</code></td><td><a href="https://github.com/nesto-software/EthernetProxy/actions/workflows/build-tcpflow-gg.yml"><img src="https://github.com/nesto-software/EthernetProxy/actions/workflows/build-tcpflow-gg.yml/badge.svg" /></a></td></tr>
+  
+  <tr><td><a href="https://github.com/nesto-software/SerialProxy">SerialProxy</a></td><td><a href="https://github.com/nesto-software/SerialProxy/releases/tag/latest">latest</a></td><td><code>bash -c "$(curl -fsSL https://raw.githubusercontent.com/nesto-software/SerialProxy/master/scripts/install-from-release.sh)"</code></td><td><a href="https://github.com/nesto-software/SerialProxy/actions/workflows/build.yml"><img src="https://github.com/nesto-software/SerialProxy/actions/workflows/build.yml/badge.svg" /></a></td></tr>
+  
+  <tr><td><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a></td><td><a href="https://github.com/nesto-software/LPTProxy/releases/tag/latest">latest</a></td><td><code>bash -c "$(curl -fsSL https://raw.githubusercontent.com/nesto-software/LPTProxy/master/scripts/install-from-release.sh)"</code></td><td><a href="https://github.com/nesto-software/LPTProxy/actions/workflows/build-lptproxy.yml"><img src="https://github.com/nesto-software/LPTProxy/actions/workflows/build-lptproxy.yml/badge.svg" /></a></td></tr>
+  
+</table>
+
 GPG
 ---------
 
