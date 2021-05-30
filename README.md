@@ -29,7 +29,7 @@ Projects
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a><br /><sub><sup>(based on: <a href="https://github.com/simsong/tcpflow">simsong/tcpflow</a>)</sub></sup></td><td rowspan="2">Ethernet</td><td>Software</td><td>TBD :gear:</td></tr><tr><td>Hardware <sub><sup><a href="https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg105e/">[TL-SG105E]</a><a href="https://greatscottgadgets.com/throwingstar/">[Throwing Star LAN Tap]</a></sub></sup></td><td>RTM :heavy_check_mark:</td></tr>
   
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/SerialProxy">SerialProxy</a><br /><sub><sup>(based on: <a href="http://www.earth.li/projectpurple/progs/sersniff.html">sersniff</a>)</sub></sup></td><td rowspan="2">RS-232</td><td>Software<sup>*</sup></td><td>RTM :heavy_check_mark:</td></tr>
-  <tr><td>Hardware <sub><sup><a href="https://www.keelog.com/serial-logger/">[AirDrive Serial Logger]</a></sub></sup></td><td>RTM<sup>**</sup> :heavy_check_mark::warning:</td></tr>
+  <tr><td>Hardware <sub><sup><a href="https://www.keelog.com/serial-logger/">[AirDrive Serial Logger]</a></sub></sup></td><td>RTM :heavy_check_mark::warning:<sup>**</sup></td></tr>
 
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a><br /><sub><sup>(based on: retro-printer capture code)</sub></sup></td><td rowspan="2">IEEE 1284 (Centronics / LPT)</td><td>Software <sub><sup><a href="https://www.retroprinter.com/">[using retro-printer module]</a></sub></sup></td><td>TBD :gear:</td></tr><tr><td>Hardware<sup>***</sup></td><td>--- :question:</td></tr>
 
