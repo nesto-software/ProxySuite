@@ -47,6 +47,8 @@ With this project, we want to contribute by...
 - ...providing an IPC layer which abstracts away the details of the interface being targeted.
 - ...joining forces with the global community of open-source enthusiasts, working on making common peripheral interfaces more accessible for everyone.
 
+<img src=".github/imgs/concept.png" />
+
 Status
 --------
 
