@@ -126,10 +126,6 @@ Dependencies & Tools
 
 FAQ
 ========
-
-- Why ZMQ? Use IP layer for interoperability for IPC and free choose of language --> ease of use above other non-functional requirements such as performance  --> we just want to prove that this approach works for devices such as thermal printers
-
-
 ### Why ZMQ?
 
 We use the IP layer to privide inter-process communication (IPC) functionality. 
