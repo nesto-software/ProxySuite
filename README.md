@@ -9,6 +9,21 @@ Proxy Suite for Raspberry Pi 4B (armhf)
 
 The Proxy Suite is a collection of open-source software which allows intercepting traffic between a target system and its peripherals using a Raspberry Pi 4B device. It is an effort to standardize data exfiltration of (wired) connections between closed-source systems using commodity hardware. The software which is referenced under this umbrella project is a slightly modified version of well-known open-source projects by individual developers and security researchers from all over the world. We at Nesto try to enhance the existing approaches and release our efforts under the same software license as the original project.
 
+Features
+========
+
+- :eyes: Gives access to (unencrypted) data passed between common wired interfaces
+- :dollar: Built for affordable/commodity hardware: Raspberry Pi 4B
+- :star: Built on forks of well-known software projects
+- :sunglasses: Let's you build your own analysis layer using any high-level language
+- :hourglass_flowing_sand: Save time by avoiding to write emulators if data access is everything you need
+- :raised_hands: Many real-world use cases, such as virtual printers or human interface devices (e.g. keyloggers)
+- :runner: Fast dev environment setup due to using [VSCode Remote Docker Containers](https://code.visualstudio.com/docs/remote/containers)
+- :tongue: Circumvents hardware vendor restrictions often seen with closed (source) systems because no access to software on host or client device is needed - only wiring of peripherals to be changed
+- :microscope: Provides hardware approaches for fully transparent, passive filtering - allowing unaltered operation of present systems
+- :guardsman: Provides software approaches for active data forwarding - giving you full control over the data stream
+- :bulb: Reference for everyone who wonders how to code for all of these (retro) interfaces using a Raspberry Pi (or similar arm devices)
+
 Device Support
 ---------
 - **Device**: [Raspberry Pi 4B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/)
@@ -41,7 +56,6 @@ Components
 <br /><br />
 
 We distinguish between a solution which does the actual proxying purely in software (i.e. using the board's CPU) and one which does it in specialized hardware. The latter is generally more performant and robust. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly the teams at [Great Scott Gadgets](https://greatscottgadgets.com/), [Keelog](https://www.keelog.com/software/) and [Retro-Printer](https://www.retroprinter.com/).
-
 
 Approach
 ---------
@@ -81,7 +95,7 @@ Releases & Downloads
   
 </table>
 
-Dependencies & Project Information
+Dependencies & Tools
 ---------
 <table>
 
