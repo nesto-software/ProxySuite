@@ -16,13 +16,13 @@ Features
 - :dollar: Built for affordable/commodity hardware: Raspberry Pi 4B
 - :star: Built on forks of well-known software projects
 - :sunglasses: Lets you build your own analysis layer using any high-level language
-- :hourglass_flowing_sand: Save time by avoiding to write emulators if data access is everything you need
+- :hourglass_flowing_sand: Saves you time if you want to get data out of target systems without writing emulators for client devices (e.g. virtual printer protocol stacks)
 - :raised_hands: Many real-world use cases, such as virtual printers or human interface devices (e.g. keyloggers)
-- :runner: Fast dev environment setup due to using [VSCode Remote Docker Containers](https://code.visualstudio.com/docs/remote/containers)
-- :tongue: Circumvents hardware vendor restrictions often seen with closed (source) systems because no access to software on host or client device is needed - only wiring of peripherals to be changed
+- :tongue: Circumvents hardware vendor restrictions often seen with closed (source) systems - no access to software on host or client device is needed; only wiring of peripherals to be changed
 - :microscope: Provides hardware approaches for fully transparent, passive filtering - allowing unaltered operation of present systems
 - :guardsman: Provides software approaches for active data forwarding - giving you full control over the data stream
 - :bulb: Reference for everyone who wonders how to code for all of these (retro) interfaces using a Raspberry Pi (or similar arm devices)
+- :runner: Fast dev environment setup if you want to support this project due to [VSCode Remote Docker Containers](https://code.visualstudio.com/docs/remote/containers) integration
 
 Device Support
 ---------
