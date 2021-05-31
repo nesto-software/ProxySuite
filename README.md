@@ -150,7 +150,7 @@ AWS IoT Greengrass is an open source edge runtime and cloud service that helps y
 The Greengrass binary conforms to a special type of Lambda function called **Lambda executable**.
 
 It is all about bringing data into the cloud nowadays.  
-As time to market (TTM) is just as crucial, we believe that - on the enterprise level - using open-source AWS technology is a secure and reliable way to accomplish it as fast as possible.
+As time to market (TTM) is crucial, we believe that - on the enterprise level - using open-source AWS technology is a secure and reliable way to accomplish it as fast as possible.
 
 GPG
 ---------
