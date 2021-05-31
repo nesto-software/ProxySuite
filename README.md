@@ -5,6 +5,8 @@ Proxy Suite for Raspberry Pi 4B (armhf)
   <img src=".github/imgs/project_logo_v2.png">
 </p>
 
+[![https://github.com/nesto-software/cross-toolchain-armhf](https://img.shields.io/badge/built%20using-cross--toolchain--armhf-blue)](https://github.com/nesto-software/cross-toolchain-armhf)
+
 The Proxy Suite is a collection of open-source software which allows intercepting traffic between a target system and its peripherals using a Raspberry Pi 4B device. It is an effort to standardize data exfiltration of (wired) connections between closed-source systems using commodity hardware. The software which is referenced under this umbrella project is a slightly modified version of well-known open-source projects by individual developers and security researchers from all over the world. We at Nesto try to enhance the existing approaches and release our efforts under the same software license as the original project.
 
 Device Support
@@ -19,17 +21,18 @@ Components
 
 <table>
 
-  <tr><th>Component</th><th>Interface Type</th><th>Data Forwarding Component Type</th><th>Status</th></tr>
+  <tr><th>Component</th><th>Interface Type</th><th>Proxy Type</th><th>Status</th></tr>
   
-  <tr><td rowspan="2"><a href="https://github.com/nesto-software/USBProxy">USBProxy</a><br /><sub><sup>(based on: <a href="https://github.com/usb-tools/USBProxy-legacy">usb-tools/USBProxy-legacy</a>)</sub></sup></td><td rowspan="2">USB</td><td>Software<sup>*</sup></td><td>RTM :heavy_check_mark:</td></tr>
-  <tr><td>Hardware <sub><sup><a href="https://luna.readthedocs.io/en/latest/features.html#reference-boards">[LUNA]</a></sub></sup></td><td>PoC :soon:</td></tr>
+  <tr><td><a href="https://github.com/nesto-software/USBProxy">USBProxy</a><br /><sub><sup>(based on: <a href="https://github.com/usb-tools/USBProxy-legacy">usb-tools/USBProxy-legacy</a>)</sub></sup></td><td rowspan="2">USB</td><td>Software<sup>*</sup></td><td>RTM :heavy_check_mark:</td></tr>
+  
+  <tr><td><a href="https://github.com/nesto-software/USBProxy2">USBProxy2</a></td><td>Hardware <sub><sup><a href="https://luna.readthedocs.io/en/latest/features.html#reference-boards">[LUNA]</a></sub></sup></td><td>TBD :soon:</td></tr>
   
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a><br /><sub><sup>(based on: <a href="https://github.com/simsong/tcpflow">simsong/tcpflow</a>)</sub></sup></td><td rowspan="2">Ethernet</td><td>Software</td><td>TBD :gear:</td></tr><tr><td>Hardware <sub><sup><a href="https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg105e/">[TL-SG105E]</a><a href="https://greatscottgadgets.com/throwingstar/">[Throwing Star LAN Tap]</a></sub></sup></td><td>RTM :heavy_check_mark:</td></tr>
   
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/SerialProxy">SerialProxy</a><br /><sub><sup>(based on: <a href="http://www.earth.li/projectpurple/progs/sersniff.html">sersniff</a>)</sub></sup></td><td rowspan="2">RS-232</td><td>Software<sup>*</sup></td><td>RTM :heavy_check_mark:</td></tr>
-  <tr><td>Hardware <sub><sup><a href="https://www.keelog.com/serial-logger/">[AirDrive Serial Logger]</a></sub></sup></td><td>PoC<sup>**</sup> :warning:</td></tr>
+  <tr><td>Hardware <sub><sup><a href="https://www.keelog.com/serial-logger/">[AirDrive Serial Logger]</a></sub></sup></td><td>RTM :heavy_check_mark::warning:<sup>**</sup></td></tr>
 
-  <tr><td rowspan="2"><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a><br /><sub><sup>(based on: retro-printer capture code)</sub></sup></td><td rowspan="2">IEEE 1284 (Centronics / LPT)</td><td>Software <sub><sup><a href="https://www.retroprinter.com/">[using retro-printer module]</a></sub></sup></td><td>TBD :gear:</td></tr><tr><td>Hardware<sup>***</sup></td><td>--- :question:</td></tr>
+  <tr><td rowspan="2"><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a><br /><sub><sup>(based on: retro-printer capture code)</sub></sup></td><td rowspan="2">IEEE 1284 (Centronics / LPT)</td><td>Software <sub><sup><a href="https://www.retroprinter.com/">[using retro-printer module]</a></sub></sup></td><td>PoC :soon:</td></tr><tr><td>Hardware</td><td>--- :question:<sup>***</sup></td></tr>
 
 </table>
 <sub><sup>* no special hardware required</sub></sup><br />
