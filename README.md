@@ -15,7 +15,7 @@ Features
 - :eyes: Gives access to (unencrypted) data passed between common wired interfaces
 - :dollar: Built for affordable/commodity hardware: Raspberry Pi 4B
 - :star: Built on forks of well-known software projects
-- :sunglasses: Let's you build your own analysis layer using any high-level language
+- :sunglasses: Lets you build your own analysis layer using any high-level language
 - :hourglass_flowing_sand: Save time by avoiding to write emulators if data access is everything you need
 - :raised_hands: Many real-world use cases, such as virtual printers or human interface devices (e.g. keyloggers)
 - :runner: Fast dev environment setup due to using [VSCode Remote Docker Containers](https://code.visualstudio.com/docs/remote/containers)
