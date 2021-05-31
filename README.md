@@ -125,7 +125,7 @@ Dependencies & Tools
 </table>
 
 FAQ
-========
+---------
 ### Why ZMQ?
 
 We use the IP layer to privide inter-process communication (IPC) functionality. 
