@@ -124,6 +124,38 @@ Dependencies & Tools
   
 </table>
 
+FAQ
+========
+
+- Why ZMQ? Use IP layer for interoperability for IPC and free choose of language --> ease of use above other non-functional requirements such as performance  --> we just want to prove that this approach works for devices such as thermal printers
+
+
+### Why ZMQ?
+
+We use the IP layer to privide inter-process communication (IPC) functionality. 
+The ZMQ library has bindings for a large variety of programming languages and provides very easy means to pass data around.
+
+You can write an analysis layer in any programming language you want, import the ZMQ library and start receiving data from any ProxySuite component using a ZMQ subscriber.
+
+We chose to use ZMQ for any ProxySuite component, so you can swap ProxySuite components (i.e. wired interfaces) at will and still reuse your analysis layer code. We (almost) fully abstract away all details of the interface being targeted. 
+
+### Why msgpack?
+
+Some newer interfaces such as Ethernet and USB allow multiplexing different data channels over a single physical wire.
+In order to pass information about ports, IPs, interface numbers, and other **metadata** for the observed connection, we send structured data over ZMQ. Data is serialized/deserialized using the msgpack library.
+
+Non-multiplexed connections such as serial and parallel do not depend on msgpack.   
+There is an idea to unify the ProxySuite components and increase interoperability by always using msgpack, see [#8](https://github.com/nesto-software/ProxySuite/issues/8).
+
+### What is Greengrass?
+
+Each ProxySuite component consists of a CLI binary and a corresponding Greengrass binary.
+AWS IoT Greengrass is an open source edge runtime and cloud service that helps you build, deploy, and manage IoT software on the AWS platform.
+The Greengrass binary conforms to a special type of Lambda function called **Lambda executable**.
+
+It is all about bringing data into the cloud nowadays.  
+As time to market (TTM) is just as crucial, we believe that - on the enterprise level - using open-source AWS technology is a secure and reliable way to accomplish it as fast as possible.
+
 GPG
 ---------
 
