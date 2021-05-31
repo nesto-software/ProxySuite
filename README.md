@@ -15,7 +15,7 @@ Features
 - :eyes: Gives access to (unencrypted) data passed between common wired interfaces
 - :dollar: Built for affordable/commodity hardware: Raspberry Pi 4B
 - :star: Built on forks of well-known software projects
-- :sunglasses: Lets you build your own analysis layer using any high-level language
+- :sunglasses: Lets you build your own analysis layer using any high-level language due to IPC components (ZMQ + msgpack)
 - :hourglass_flowing_sand: Saves you time if you want to get data out of target systems without writing emulators for client devices (e.g. virtual printer protocol stacks)
 - :raised_hands: Many real-world use cases, such as virtual printers or human interface devices (e.g. keyloggers)
 - :tongue: Circumvents hardware vendor restrictions often seen with closed (source) systems - no access to software on host or client device is needed; only wiring of peripherals to be changed
