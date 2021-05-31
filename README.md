@@ -14,12 +14,12 @@ Device Support
 - **Distribution**: Raspberry Pi OS / Raspbian (i.e. Debian's packaging system)
 - **Architecture**: armhf
 
-Projects
+Components
 ---------
 
 <table>
 
-  <tr><th>Project</th><th>Interface Type</th><th>Data Forwarding Component Type</th><th>Status</th></tr>
+  <tr><th>Component</th><th>Interface Type</th><th>Data Forwarding Component Type</th><th>Status</th></tr>
   
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/USBProxy">USBProxy</a><br /><sub><sup>(based on: <a href="https://github.com/usb-tools/USBProxy-legacy">usb-tools/USBProxy-legacy</a>)</sub></sup></td><td rowspan="2">USB</td><td>Software<sup>*</sup></td><td>RTM :heavy_check_mark:</td></tr>
   <tr><td>Hardware <sub><sup><a href="https://luna.readthedocs.io/en/latest/features.html#reference-boards">[LUNA]</a></sub></sup></td><td>PoC :soon:</td></tr>
@@ -61,12 +61,13 @@ Applicability
 
 Most thermal printers on the market use the [JetDirect](https://en.wikipedia.org/wiki/JetDirect) or the AppSocket protocol to receive print jobs over the network. It is a simple TCP connection over port 9100, which transports data in plain text. No encryption is used for other transports over interfaces such as USB, Serial, or LPT either. Thus, the ProxySuite components gain access to all of the invoice content transferred between the POS system and its printer. Once the data is intercepted, it can be analyzed as is. The ZMQ layer provided by all ProxySuite components makes the analysis a lot easier by letting you choose the programming language you want to use. There is a clear separation between "low-level" components that extract the data for you and the final analysis, which you might code in any language that has a binding for [ZMQ](http://wiki.zeromq.org/bindings:_start) and [msgpack](https://msgpack.org/).
 
-Releases / Downloads
+Releases & Downloads
 ---------
 
 <table>
 
-  <tr><th>Project</th><th>Release</th><th>Download</th><th>Status</th></tr>
+  <tr><th>Component</th><th>Release</th><th>Download</th><th>Status</th></tr>
+
   <tr><td><a href="https://github.com/nesto-software/USBProxy">USBProxy</a></td><td><a href="https://github.com/nesto-software/USBProxy/releases/tag/nightly-latest">nightly</a><br /><a href="https://github.com/nesto-software/USBProxy/releases/tag/v0.1.0">v0.1.0</a></td><td><code>bash -c "$(curl -fsSL https://raw.githubusercontent.com/nesto-software/USBProxy/master/scripts/install-from-release.sh)"</code></td><td><a href="https://github.com/nesto-software/USBProxy/actions/workflows/build-app-nightly.yaml"><img src="https://github.com/nesto-software/USBProxy/workflows/.github/workflows/build-app-nightly.yaml/badge.svg?branch=dev" /></a><br /><a href="https://github.com/nesto-software/USBProxy/actions/workflows/build-app-release.yaml"><img src="https://github.com/nesto-software/USBProxy/workflows/.github/workflows/build-app-release.yaml/badge.svg" /></a></td></tr>
   
   <tr><td><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a></td><td><a href="https://github.com/nesto-software/EthernetProxy/releases/tag/latest">latest</a></td><td><code>bash -c "$(curl -fsSL https://raw.githubusercontent.com/nesto-software/EthernetProxy/master/scripts/install-from-release.sh)"</code></td><td><a href="https://github.com/nesto-software/EthernetProxy/actions/workflows/build-tcpflow-gg.yml"><img src="https://github.com/nesto-software/EthernetProxy/actions/workflows/build-tcpflow-gg.yml/badge.svg" /></a></td></tr>
@@ -74,6 +75,35 @@ Releases / Downloads
   <tr><td><a href="https://github.com/nesto-software/SerialProxy">SerialProxy</a></td><td><a href="https://github.com/nesto-software/SerialProxy/releases/tag/latest">latest</a></td><td><code>bash -c "$(curl -fsSL https://raw.githubusercontent.com/nesto-software/SerialProxy/master/scripts/install-from-release.sh)"</code></td><td><a href="https://github.com/nesto-software/SerialProxy/actions/workflows/build.yml"><img src="https://github.com/nesto-software/SerialProxy/actions/workflows/build.yml/badge.svg" /></a></td></tr>
   
   <tr><td><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a></td><td><a href="https://github.com/nesto-software/LPTProxy/releases/tag/latest">latest</a></td><td><code>bash -c "$(curl -fsSL https://raw.githubusercontent.com/nesto-software/LPTProxy/master/scripts/install-from-release.sh)"</code></td><td><a href="https://github.com/nesto-software/LPTProxy/actions/workflows/build-lptproxy.yml"><img src="https://github.com/nesto-software/LPTProxy/actions/workflows/build-lptproxy.yml/badge.svg" /></a></td></tr>
+  
+</table>
+
+Dependencies & Project Information
+---------
+<table>
+
+  <tr><th>Component</th><th>Shared Runtime Lib Dependencies (dpkg/apt)</th><th>Programming Language(s)</th><th>Build System(s)</th></tr>
+
+  <tr><td><a href="https://github.com/nesto-software/USBProxy">USBProxy</a></td><td>
+  libusb-1.0-0=2:1.0.22-2<br />
+  libudev1=241-7~deb10u5+rpi1<br />
+  libzmq3-dev=4.3.1-4+deb10u2
+  </td><td>C/C++</td><td>CMake, Make</td></tr>
+  
+  <tr><td><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a></td><td>
+  libpcap0.8=1.8.1-6<br />
+  openssl=1.1.1d-0+deb10u6+rpt1<br />
+  libzmq3-dev=4.3.1-4+deb10u2
+  </td><td>C++</td><td>Autotools, Make</td></tr>
+  
+  <tr><td><a href="https://github.com/nesto-software/SerialProxy">SerialProxy</a></td><td>
+  libzmq3-dev=4.3.1-4+deb10u2
+  </td><td>C++</td><td>CMake, Make</td></tr>
+  
+  <tr><td><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a></td><td>
+  wiringpi=2.50<br />
+  libzmq3-dev=4.3.1-4+deb10u2
+  </td><td>C</td><td>CMake, Make</td></tr>
   
 </table>
 
