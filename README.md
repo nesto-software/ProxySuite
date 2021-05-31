@@ -25,7 +25,7 @@ Projects
   
   <tr><td><a href="https://github.com/nesto-software/USBProxy">USBProxy</a><br /><sub><sup>(based on: <a href="https://github.com/usb-tools/USBProxy-legacy">usb-tools/USBProxy-legacy</a>)</sub></sup></td><td rowspan="2">USB</td><td>Software<sup>*</sup></td><td>RTM :heavy_check_mark:</td></tr>
   
-  <tr><td><a href="https://github.com/nesto-software/USBProxy2">USBProxy2</a></td><td>Hardware <sub><sup><a href="https://luna.readthedocs.io/en/latest/features.html#reference-boards">[LUNA]</a></sub></sup></td><td>PoC :soon:</td></tr>
+  <tr><td><a href="https://github.com/nesto-software/USBProxy2">USBProxy2</a></td><td>Hardware <sub><sup><a href="https://luna.readthedocs.io/en/latest/features.html#reference-boards">[LUNA]</a></sub></sup></td><td>TBD :soon:</td></tr>
   
   <tr><td rowspan="2"><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a><br /><sub><sup>(based on: <a href="https://github.com/simsong/tcpflow">simsong/tcpflow</a>)</sub></sup></td><td rowspan="2">Ethernet</td><td>Software</td><td>TBD :gear:</td></tr><tr><td>Hardware <sub><sup><a href="https://www.tp-link.com/us/business-networking/easy-smart-switch/tl-sg105e/">[TL-SG105E]</a><a href="https://greatscottgadgets.com/throwingstar/">[Throwing Star LAN Tap]</a></sub></sup></td><td>RTM :heavy_check_mark:</td></tr>
   
