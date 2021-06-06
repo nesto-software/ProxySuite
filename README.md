@@ -20,8 +20,8 @@ Features
 - :hourglass_flowing_sand: Saves you time if you want to get data out of target systems without writing emulators for client devices (e.g. virtual printer protocol stacks)
 - :raised_hands: Many real-world use cases, such as virtual printers or human interface devices (e.g. keyloggers)
 - :tongue: Circumvents hardware vendor restrictions often seen with closed (source) systems - no access to software on host or client device is needed; only wiring of peripherals to be changed
-- :microscope: Provides hardware approaches for fully transparent, passive filtering - allowing unaltered operation of present systems
-- :guardsman: Provides software approaches for active data forwarding - giving you full control over the data stream
+- :microscope: Provides out-of-band (hardware) approaches for fully transparent, passive filtering - allowing unaltered operation of present systems
+- :guardsman: Provides in-band (software) approaches for active data forwarding - giving you full control over the data stream
 - :bulb: Reference for everyone who wonders how to code for all of these (retro) interfaces using a Raspberry Pi (or similar arm devices)
 - :runner: Fast dev environment setup if you want to support this project due to [VSCode Remote Docker Containers](https://code.visualstudio.com/docs/remote/containers) integration
 
@@ -56,7 +56,7 @@ Components
 <sub><sup>*** we are not aware of any solutions on the marked that support this feature</sub></sup>
 <br /><br />
 
-We distinguish between a solution which does the actual proxying purely in software (i.e. using the board's CPU) and one which does it in specialized hardware. The latter is generally more performant and robust. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly the teams at [Great Scott Gadgets](https://greatscottgadgets.com/), [Keelog](https://www.keelog.com/software/) and [Retro-Printer](https://www.retroprinter.com/).
+We distinguish between a solution which does the actual proxying purely in software (i.e. using the board's CPU) and one which does it in specialized hardware. The latter is generally more performant and robust as it is *out-of-band*. Unfortunately, it is not possible to achieve this with commodity hardware for all types of interfaces yet. We keep an eye on active development that is going on though, particularly the teams at [Great Scott Gadgets](https://greatscottgadgets.com/), [Keelog](https://www.keelog.com/software/) and [Retro-Printer](https://www.retroprinter.com/).
 
 Approach
 ---------
