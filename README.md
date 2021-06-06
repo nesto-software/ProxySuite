@@ -102,24 +102,24 @@ Dependencies & Tools
   <tr><th>Component</th><th>Shared Runtime Lib Dependencies (dpkg/apt)</th><th>Programming Language(s)</th><th>Build System(s)</th></tr>
 
   <tr><td><a href="https://github.com/nesto-software/USBProxy">USBProxy</a></td><td>
-  libusb-1.0-0=2:1.0.22-2<br />
-  libudev1=241-7~deb10u5+rpi1<br />
-  libzmq3-dev=4.3.1-4+deb10u2
+  libusb-1.0-0<br />
+  libudev1<br />
+  libzmq3-dev
   </td><td>C/C++</td><td>CMake, Make</td></tr>
   
   <tr><td><a href="https://github.com/nesto-software/EthernetProxy">EthernetProxy</a></td><td>
-  libpcap0.8=1.8.1-6<br />
-  openssl=1.1.1d-0+deb10u6+rpt1<br />
-  libzmq3-dev=4.3.1-4+deb10u2
+  libpcap0.8<br />
+  openssl<br />
+  libzmq3-dev
   </td><td>C++</td><td>Autotools, Make</td></tr>
   
   <tr><td><a href="https://github.com/nesto-software/SerialProxy">SerialProxy</a></td><td>
-  libzmq3-dev=4.3.1-4+deb10u2
+  libzmq3-dev
   </td><td>C++</td><td>CMake, Make</td></tr>
   
   <tr><td><a href="https://github.com/nesto-software/LPTProxy">LPTProxy</a></td><td>
   wiringpi=2.50<br />
-  libzmq3-dev=4.3.1-4+deb10u2
+  libzmq3-dev
   </td><td>C</td><td>CMake, Make</td></tr>
   
 </table>
