@@ -1,0 +1,98 @@
+name: proxy-suite-tests
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  test-usbproxy:
+    name: Run tests for USBProxy
+    runs-on: ubuntu-latest
+    container:
+      image: node:14.17.0
+    
+    services:
+      pi:
+        image: ghcr.io/${{ github.repository_owner }}/dockerpi:latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: nesto-software/dockerpi
+
+    - name: Install testsuite deps
+      run: |
+        cd tests && npm install
+
+    - name: Run testsuite
+      run: |
+        cd tests && npm run test -- -t USBProxy
+
+  test-ethernet-proxy:
+    name: Run tests for EthernetProxy
+    runs-on: ubuntu-latest
+    container:
+      image: node:14.17.0
+
+    services:
+      pi:
+        image: ghcr.io/${{ github.repository_owner }}/dockerpi:latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: nesto-software/dockerpi
+
+    - name: Install testsuite deps
+      run: |
+        cd tests && npm install
+
+    - name: Run testsuite
+      run: |
+        cd tests && npm run test -- -t EthernetProxy
+
+  test-serial-proxy:
+    name: Run tests for SerialProxy
+    runs-on: ubuntu-latest
+    container:
+      image: node:14.17.0
+
+    services:
+      pi:
+        image: ghcr.io/${{ github.repository_owner }}/dockerpi:latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: nesto-software/dockerpi
+
+    - name: Install testsuite deps
+      run: |
+        cd tests && npm install
+
+    - name: Run testsuite
+      run: |
+        cd tests && npm run test -- -t SerialProxy
+
+  test-lpt-proxy:
+    name: Run tests for LPTProxy
+    runs-on: ubuntu-latest
+    container:
+      image: node:14.17.0
+
+    services:
+      pi:
+        image: ghcr.io/${{ github.repository_owner }}/dockerpi:latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: nesto-software/dockerpi
+
+    - name: Install testsuite deps
+      run: |
+        cd tests && npm install
+
+    - name: Run testsuite
+      run: |
+        cd tests && npm run test -- -t LPTProxy
