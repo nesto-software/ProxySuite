@@ -6,7 +6,7 @@ on:
 
 jobs:
   test-usbproxy:
-    name: Run tests for USBProxy
+    name: USBProxy
     runs-on: ubuntu-latest
     container:
       image: node:14.17.0
@@ -29,7 +29,7 @@ jobs:
         cd tests && npm run test -- -t USBProxy
 
   test-ethernet-proxy:
-    name: Run tests for EthernetProxy
+    name: EthernetProxy
     runs-on: ubuntu-latest
     container:
       image: node:14.17.0
@@ -52,7 +52,7 @@ jobs:
         cd tests && npm run test -- -t EthernetProxy
 
   test-serial-proxy:
-    name: Run tests for SerialProxy
+    name: SerialProxy
     runs-on: ubuntu-latest
     container:
       image: node:14.17.0
@@ -75,7 +75,7 @@ jobs:
         cd tests && npm run test -- -t SerialProxy
 
   test-lpt-proxy:
-    name: Run tests for LPTProxy
+    name: LPTProxy
     runs-on: ubuntu-latest
     container:
       image: node:14.17.0
