@@ -3,9 +3,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
-    
-env:
-  DOCKERPI_IMAGE_VERSION: "2021-05-07"
 
 jobs:
   test-usbproxy:
@@ -16,7 +13,7 @@ jobs:
     
     services:
       pi:
-        image: ghcr.io/${{ github.repository_owner }}/dockerpi:${{ env.DOCKERPI_IMAGE_VERSION }}
+        image: ghcr.io/${{ github.repository_owner }}/dockerpi:2021-05-07
 
     steps:
     - uses: actions/checkout@v2
@@ -39,7 +36,7 @@ jobs:
 
     services:
       pi:
-        image: ghcr.io/${{ github.repository_owner }}/dockerpi:latest
+        image: ghcr.io/${{ github.repository_owner }}/dockerpi:2021-05-07
 
     steps:
     - uses: actions/checkout@v2
@@ -62,7 +59,7 @@ jobs:
 
     services:
       pi:
-        image: ghcr.io/${{ github.repository_owner }}/dockerpi:latest
+        image: ghcr.io/${{ github.repository_owner }}/dockerpi:2021-05-07
 
     steps:
     - uses: actions/checkout@v2
@@ -85,7 +82,7 @@ jobs:
 
     services:
       pi:
-        image: ghcr.io/${{ github.repository_owner }}/dockerpi:latest
+        image: ghcr.io/${{ github.repository_owner }}/dockerpi:2021-05-07
 
     steps:
     - uses: actions/checkout@v2
